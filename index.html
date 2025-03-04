@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="style/index.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap" rel="stylesheet">
-        <title>Reserva de Restaurante</title>
-
-</head>
-<body>
-        <section class="container">
-                <h1>Reserva De Mesa</h1>
-        <div class="box">
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Reserva de Restaurante</title>
+  </head>
+  <body>
+    <section class="container">
+        <form>
+      <h1>Reserva De Mesa</h1>
+      <div class="box">
+        <select name="" id="">
+          <option label="Número De Pessoas" hidden selected></option>
+          <option label="1 Pessoa"  value="1 Pessoa"></option>
+          <option label="2 Pessoas" value="2 Pessoas"></option>
+          <option label="3 Pessoas" value="3 Pessoas "></option>
+          <option label="4 Pessoas" value="4 Pessoas"></option>
+          <option label="5 Pessoas" value="5 Pessoas"></option>
+        </select>
+        <div class="data padrao" >
+                <select name="" id="">
+                        <option label="Dia Da Semana" hidden selected></option>
+                        <option label="Segunda-Feira"  value="Segunda-Feira"></option>
+                        <option label="Terça-Feira" value="Terça-Feira"></option>
+                        <option label="Quarta-Feira" value="Quarta-Feira "></option>
+                        <option label="Quinta-Feira" value="Quinta-Feira"></option>
+                        <option label="Sexta-Feira" value="Sexta-Feira"></option>
+                        <option label="Sabado" value="Sabado"></option>
+                      </select>
         </div>
-        
-        </section>
+        <div class="horario padrao" >
+                <select name="" id="">
+                        <option label="Horario" hidden selected></option>
+                        <option label="12:30 " value="12h30"></option>
+                        <option label="15:00"  value="12h30"></option>
+                        <option label="18:00" value="18h00"></option>
+                        <option label="20:00" value="20h00"></option>
+                        <option label="22:00" value="22h00"></option>
+                      </select>
+                </div>
+                <input class="btn" type="submit">
 
-</body>
+                
+</form>
+</div>
+</div>
+
+    </section>
+  </body>
 </html>
