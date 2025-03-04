@@ -1,0 +1,15 @@
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+a{
+        text-decoration: none;
+        color: black;
+}
+
+body{
+background-image: url(../assets/imgs/photo-1517248135467-4c7edcad34c4.jpg);
+background-repeat: no-repeat;
+background-position: center;
+}
