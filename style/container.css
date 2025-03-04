@@ -15,4 +15,13 @@
 
                 font-size: 2.8rem;
         }
+        & .box{
+                width: 500px;
+                height: 550px;
+                
+                border: 1px solid;
+
+                margin: auto;
+                margin-top: 8%;
+        }
 }
