@@ -1,0 +1,42 @@
+.reservado{
+        width: 250px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 19pt;
+        
+        margin: auto;
+        margin-top: 30px;
+        
+        animation: baixoPraCima 1.5s reverse both;
+        
+}
+.green{
+        background-color: rgba(16, 201, 16, 0.699);
+        animation: baixoPraCima 1s reverse both;
+}
+.red{
+        background-color: rgba(255, 0, 0, 0.76);
+        animation: baixoPraCima 1s 1s reverse both;
+        
+}
+.none{
+       visibility: hidden;
+}
+@keyframes baixoPraCima{
+        0%{
+                transform: translateY(0px);
+        }
+        27%{
+                opacity: 0;
+        }
+       
+        100%{
+                transform: translateY(150px);
+                opacity: 0;
+        }
+
+}
+
+=

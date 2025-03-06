@@ -84,16 +84,48 @@ Time.addEventListener("click", () => {
 });
 
 // reservar
-const btn=document.querySelector('.btn')
-btn.addEventListener('click',()=>{
-        class Person{
-                constructor(qtdP,dia,horario){
-                        this.Pessoas=qtdP=`${numberPerson.value}`,
-                        this.dia=dia=`${DayOfTheWeek.value}`,
-                        this.horario=horario=`${Time.value}`
+const btn = document.querySelector(".btn");
+btn.addEventListener("click", () => {
+  class Person {
+    constructor(qtdP, dia, horario) {
+      (this.Pessoas = qtdP = `${numberPerson.value}`),
+        (this.dia = dia = `${DayOfTheWeek.value}`),
+        (this.horario = horario = `${Time.value}`);
+    }
+  }
+  const criarP = new Person(
+    `${numberPerson.value} ${DayOfTheWeek.value} ${Time.value}`
+  );
 
-                }
-        }
-        const criarP=new Person(`${numberPerson.value} ${DayOfTheWeek.value} ${Time.value}`)
-        console.log(criarP)
-})
+  const armazem = [criarP];
+  console.log(armazem);
+
+  //alerta de reserva e de erro
+  const reser = document.querySelector(".reservado");
+  if (
+    (!numberPerson.value == true) &
+    (!DayOfTheWeek.value == true) &
+    (!Time.value == true)
+  ) {
+    reser.innerHTML = "ERRO";
+    reser.classList.add("red");
+    reser.classList.remove("green");
+
+    setTimeout(() => {
+      reser.innerHTML = "";
+      reser.classList.remove("red");
+    }, 1500);
+  } 
+
+  else {
+setTimeout(() => {
+  reser.innerHTML = "";
+    reser.classList.remove("green");
+   
+}, 1700);
+
+    reser.classList.remove("red");
+    reser.innerHTML = "Reservado";
+    reser.classList.add("green");
+  }
+});
