@@ -97,8 +97,6 @@ btn.addEventListener("click", () => {
     `${numberPerson.value} ${DayOfTheWeek.value} ${Time.value}`
   );
 
-  const armazem = [criarP];
-  console.log(armazem);
 
   //alerta de reserva e de erro
   const reser = document.querySelector(".reservado");
@@ -127,5 +125,8 @@ setTimeout(() => {
     reser.classList.remove("red");
     reser.innerHTML = "Reservado";
     reser.classList.add("green");
+    const armazem = [{criarP}];
+    console.log(armazem);
+  
   }
 });
